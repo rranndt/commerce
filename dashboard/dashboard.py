@@ -6,8 +6,8 @@ from babel.numbers import format_currency
 sns.set(style='dark')
 
 # Loaded cleaned data
-product_df = pd.read_csv('product_category_name.csv')
-revenue_df = pd.read_csv('revenue_by_day.csv')
+product_df = pd.read_csv("https://raw.githubusercontent.com/rranndt/commerce/main/dashboard/product_category_name.csv")
+revenue_df = pd.read_csv("https://raw.githubusercontent.com/rranndt/commerce/main/dashboard/revenue_by_day.csv")
 
 # Mengubah 'order_approved_at' ke tipe data 'datetime'
 revenue_df['order_approved_at'] = pd.to_datetime(
